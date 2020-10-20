@@ -1,5 +1,9 @@
 # Skin Orchestra
-Simple circuit to turn an Android phone into a MIDI/OSC skin touch sensor.
+Turn an Android phone into a MIDI/OSC skin touch sensor with this simple, tiny, battery-free circuit.
+
+An EAGLE board design. I made this years ago and have moved onto KiCAD and SMD since. We have also moved onto a pure digital touch sensor design integrated with our wearable LED costumes, so this circuit is not likely to be under active development again.
+
+However, it's been tested with many different Android phones, and works well in practice. You might want to use the "phantom power" idea to run other devices off a microphone port without needing batteries.
 
 ![Board](board.png)
 ![Schematic](schematic.png)
@@ -7,7 +11,7 @@ Simple circuit to turn an Android phone into a MIDI/OSC skin touch sensor.
 
 ## Concept
 
-This circuit is an oscillator which runs on the phantom power that can be extracted from a cheap Android smartphone's microphone jack. Therefore, a low current CMOS 555 timer must be used. Check your phone's specifications before connecting this circuit - you use it completely at your own risk.
+This circuit is an oscillator which runs on the bias voltage that can be extracted from an Android smartphone's microphone jack. Therefore, a low current CMOS 555 timer must be used. Check your phone's specifications before connecting this circuit - you use it completely at your own risk.
 
 Once plugged into an Android phone, the pads marked "skin" can be bridged by skin contact, which produces a variable frequency square wave across the microphone input.
 
