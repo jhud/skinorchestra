@@ -5,6 +5,7 @@ An EAGLE board design. I made this years ago and have moved onto KiCAD and SMD s
 
 However, it's been tested with many different Android phones, and works well in practice. You might want to use the "phantom power" idea to run other devices off a microphone port without needing batteries.
 
+![Constructed unit](skinorch.jpg)
 ![Board](board.png)
 ![Schematic](schematic.png)
 
@@ -16,6 +17,12 @@ This circuit is an oscillator which runs on the bias voltage that can be extract
 Once plugged into an Android phone, the pads marked "skin" can be bridged by skin contact, which produces a variable frequency square wave across the microphone input.
 
 You can use this "as is" for a simple tone, but this signal can also be processed by an Android app, which counts the zero-crossing frequency of the square wave and converts it to MIDI or OSC (app coming soon).
+
+## Construction
+
+This board design only uses a few through-hole components, so it should be easy to construct. You could also build it easily with veroboard or on a breadboard if you don't want to fabricate the board.
+
+To connect to the smartphone, use a standard 4-pin headphone/microphone connector. Connect ground to ground, and the microphone to "SIGNAL". Check your phone's headphone jack pinout to make sure you have the right channels on the connector.
 
 
 ## Usage
